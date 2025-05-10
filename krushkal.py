@@ -30,3 +30,15 @@ def kruskal(nodes, edges):
 nodes = ['A', 'B', 'C', 'D']
 edges = [('A', 'B', 1), ('B', 'C', 4), ('A', 'D', 3), ('B', 'D', 2), ('C', 'D', 5)]
 kruskal(nodes, edges)
+
+num_vertices = int(input("Enter number of vertices: "))
+vertices = list(range(num_vertices))
+
+num_edges = int(input("Enter number of edges: "))
+edges = []
+
+print("Enter edges in format: u v weight")
+for _ in range(num_edges):
+    u, v, w = map(int, input().split())
+    edges.append((u, v, w))
+    
